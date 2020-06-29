@@ -14,7 +14,7 @@ class Connection:
         if not self.wlan.isconnected():
             print('connecting to network...')
             self.wlan.connect(ssid, pk)
-            while not wlan.isconnected():
+            while not self.wlan.isconnected():
                 pass
         print("network config: ", self.wlan.ifconfig())
     

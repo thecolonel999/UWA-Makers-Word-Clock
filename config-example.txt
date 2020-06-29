@@ -1,4 +1,5 @@
 # Put config in here, do not put quotes around strings
+# change name to config.txt when you're done
 SSID=YOUR_NETWORK_HERE
 PK=YOUR_PASSWORD_HERE
 GMT_OFFSET=8

@@ -32,12 +32,15 @@ np = NeoPixel(np_pin, N_LEDS)
 
 
 # Cutesy animation to cycle through all of the leds
-while True:
-    colour = (MAX_BRIGHT, MAX_BRIGHT, MAX_BRIGHT)
-    zeroed = (0, 0, 0) 
-    np[0] = colour
-    for i in range(1, N_LEDS):
-        np[i - 1] = zeroed
-        np[i] = colour
-        np.write()
-        sleep_ms(500)
+# Ampy times out when you have infinite loops though
+# so you need to run the code with  ampy --port /dev/ttyUSB0  --baud 115200 run -n main.py
+# But you will lose stdout when you do that /shrug
+# while True:
+#     colour = (MAX_BRIGHT, MAX_BRIGHT, MAX_BRIGHT)
+#     zeroed = (0, 0, 0) 
+#     np[0] = colour
+#     for i in range(1, N_LEDS):
+#         np[i - 1] = zeroed
+#         np[i] = colour
+#         np.write()
+#         sleep_ms(500)
