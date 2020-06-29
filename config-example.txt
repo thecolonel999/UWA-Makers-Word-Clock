@@ -1,0 +1,6 @@
+# Put config in here, do not put quotes around strings
+SSID=YOUR_NETWORK_HERE
+PK=YOUR_PASSWORD_HERE
+GMT_OFFSET=8
+N_LEDS=256
+MAX_BRIGHT=50
